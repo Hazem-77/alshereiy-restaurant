@@ -50,7 +50,7 @@ const DEFAULT_ORDER_MSG = "مرحباً مطعم الشريعى، أريد ال�
 export const siteConfig: SiteConfig = {
   name: "مطعم الشريعى",
   shortName: "الشريعى",
-  tagline: "فرايد تشكن وبورجر - طعم أصلي وقرمشة لا تقاوم",
+  tagline: "فرايد تشكن وبرجر - طعم أصلي وقرمشة لا تقاوم",
   description:
     "أشهى وجبات الفرايد تشكن المقرمشة والبرجر المشوي على أصوله بمكونات طازجة 100% وتتبيلات خاصة ومميزة.",
   hero: {
@@ -58,7 +58,7 @@ export const siteConfig: SiteConfig = {
     title: "أشهى الأطباق ومكونات مختارة",
     highlight: "وتجربة مختلفة في كل مرة",
     description:
-      "نقدم لكم أفخم قطع الفرايد تشكن المقرمشة الذهبية وساندوتشات البورجر العملاقة المحضرة يومياً من أجود المكونات الطازجة مع باقة صوصاتنا الخاصة.",
+      "نقدم لكم أفخم قطع الفرايد تشكن المقرمشة الذهبية وساندوتشات البرجر العملاقة المحضرة يومياً من أجود المكونات الطازجة مع باقة صوصاتنا الخاصة.",
     primaryCta: "اطلب الآن عبر واتساب",
     secondaryCta: "استكشف قائمة الطعام",
     stats: [
@@ -73,8 +73,8 @@ export const siteConfig: SiteConfig = {
     phoneDisplay: "0120 - 869 - 6419",
     whatsapp: WHATSAPP_NUMBER,
     whatsappDisplay: "0120 - 869 - 6419",
-    address: "شارع بورسعيد، بجوار ميدان الساعة، الإسكندرية / مصر",
-    city: "الإسكندرية",
+    address: "شارع بورسعيد، بجوار ميدان الساعة، مغاغة / مصر",
+    city: "مغاغة",
     country: "مصر",
     googleMapsUrl: "https://maps.google.com/?q=El-Shereiy+Fried+Chicken",
     openingHours: {

@@ -30,7 +30,7 @@ export default function Footer({ siteConfig }: { siteConfig: SiteConfig }) {
                   {siteConfig.name}
                   <Flame className="w-4 h-4 text-amber-500 fill-amber-500" />
                 </span>
-                <span className="text-xs text-amber-400">فرايد تشكن وبورجر</span>
+                <span className="text-xs text-amber-400">فرايد تشكن وبرجر</span>
               </div>
             </Link>
 

@@ -3,6 +3,10 @@ import { Cairo } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/data/siteConfig";
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  `https://${process.env.VERCEL_URL ?? "localhost:3000"}`;
+
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -17,14 +21,14 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://alshereiy.com"),
-  title: `${siteConfig.name} | فرايد تشكن وبورجر - أشهى الوجبات المقرمشة في الإسكندرية`,
+  metadataBase: new URL(SITE_URL),
+  title: `${siteConfig.name} | فرايد تشكن وبرجر - أشهى الوجبات المقرمشة في مغاغة`,
   description: siteConfig.description,
   keywords: [
     "مطعم الشريعى",
     "الشريعى فرايد تشكن",
     "فرايد تشكن مصر",
-    "برجر الإسكندرية",
+    "برجر مغاغة",
     "وجبات بروست",
     "وجبات زنجر",
     "دجاج مقلي مقرمش",
@@ -34,9 +38,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {
-    title: `${siteConfig.name} | فرايد تشكن وبورجر`,
+    title: `${siteConfig.name} | فرايد تشكن وبرجر`,
     description: siteConfig.description,
-    url: "https://alshereiy.com",
+    url: SITE_URL,
     siteName: siteConfig.name,
     images: [
       {
@@ -74,7 +78,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Restaurant",
     name: siteConfig.name,
-    image: `https://alshereiy.com${siteConfig.branding.storefrontImage}`,
+    image: `${SITE_URL}${siteConfig.branding.storefrontImage}`,
     telephone: siteConfig.contact.phone,
     servesCuisine: ["Fried Chicken", "Burgers", "Fast Casual"],
     priceRange: "$$",
@@ -100,7 +104,7 @@ export default function RootLayout({
         closes: "02:30",
       },
     ],
-    menu: "https://alshereiy.com/#menu",
+    menu: `${SITE_URL}/#menu`,
   };
 
   return (

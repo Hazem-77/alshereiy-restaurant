@@ -56,7 +56,7 @@ export default function Navbar({ siteConfig }: { siteConfig: SiteConfig }) {
               <Flame className="w-5 h-5 text-amber-500 fill-amber-500 inline-block animate-pulse" />
             </span>
             <span className="text-[11px] text-amber-400/90 font-medium tracking-wide">
-              فرايد تشكن إيجبت & بورجر
+               فرايد تشكن إيجبت & برجر
             </span>
           </div>
         </Link>

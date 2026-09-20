@@ -1,0 +1,31 @@
+[35msrc/app/admin/login/page.tsx[m[36m:[m[32m11[m[36m:[m  const [[1;31mpassword[m, set[1;31mPassword[m] = useState("");
+[35msrc/app/admin/login/page.tsx[m[36m:[m[32m12[m[36m:[m  const [show[1;31mPassword[m, setShow[1;31mPassword[m] = useState(false);
+[35msrc/app/admin/login/page.tsx[m[36m:[m[32m25[m[36m:[m      const { error: authError } = await login(email, [1;31mpassword[m);
+[35msrc/app/admin/login/page.tsx[m[36m:[m[32m91[m[36m:[m                  type={show[1;31mPassword[m ? "text" : "[1;31mpassword[m"}
+[35msrc/app/admin/login/page.tsx[m[36m:[m[32m92[m[36m:[m                  value={[1;31mpassword[m}
+[35msrc/app/admin/login/page.tsx[m[36m:[m[32m93[m[36m:[m                  onChange={(e) => set[1;31mPassword[m(e.target.value)}
+[35msrc/app/admin/login/page.tsx[m[36m:[m[32m100[m[36m:[m                  onClick={() => setShow[1;31mPassword[m(!show[1;31mPassword[m)}
+[35msrc/app/admin/login/page.tsx[m[36m:[m[32m104[m[36m:[m                  {show[1;31mPassword[m ? (
+[35msrc/app/api/auth/login/route.ts[m[36m:[m[32m15[m[36m:[m  const { email, [1;31mpassword[m }: { email: string; [1;31mpassword[m: string } =
+[35msrc/app/api/auth/login/route.ts[m[36m:[m[32m18[m[36m:[m  if (!email || ![1;31mpassword[m) {
+[35msrc/app/api/auth/login/route.ts[m[36m:[m[32m25[m[36m:[m  const { data, error } = await supabase.auth.signInWith[1;31mPassword[m({
+[35msrc/app/api/auth/login/route.ts[m[36m:[m[32m27[m[36m:[m    [1;31mpassword[m,
+[35msrc/lib/auth.ts[m[36m:[m[32m3[m[36m:[mexport async function login(email: string, [1;31mpassword[m: string) {
+[35msrc/lib/auth.ts[m[36m:[m[32m7[m[36m:[m    body: JSON.stringify({ email, [1;31mpassword[m }),
+[35msupabase/config.toml[m[36m:[m[32m20[m[36m:[m# `postgres` are reachable through the Data API roles (`anon`, `authenticated`, `[1;31mservice_role[m`)
+[35msupabase/config.toml[m[36m:[m[32m56[m[36m:[m# [1;31msecret_key[m = "env(SECRET_VALUE)"
+[35msupabase/config.toml[m[36m:[m[32m100[m[36m:[mopenai_[1;31mapi_key[m = "env(OPENAI_[1;31mAPI_KEY[m)"
+[35msupabase/config.toml[m[36m:[m[32m180[m[36m:[m# [1;31mPassword[ms shorter than this value will be rejected as weak. Minimum 6, recommended 8 or more.
+[35msupabase/config.toml[m[36m:[m[32m181[m[36m:[mminimum_[1;31mpassword[m_length = 6
+[35msupabase/config.toml[m[36m:[m[32m182[m[36m:[m# [1;31mPassword[ms that do not meet the following requirements will be rejected as weak. Supported values
+[35msupabase/config.toml[m[36m:[m[32m184[m[36m:[m[1;31mpassword[m_requirements = ""
+[35msupabase/config.toml[m[36m:[m[32m226[m[36m:[m# If enabled, users will need to reauthenticate or have logged in recently to change their [1;31mpassword[m.
+[35msupabase/config.toml[m[36m:[m[32m227[m[36m:[msecure_[1;31mpassword[m_change = false
+[35msupabase/config.toml[m[36m:[m[32m228[m[36m:[m# Controls the minimum amount of time that must pass before sending another signup confirmation or [1;31mpassword[m reset email.
+[35msupabase/config.toml[m[36m:[m[32m241[m[36m:[m# pass = "env(SENDGRID_[1;31mAPI_KEY[m)"
+[35msupabase/config.toml[m[36m:[m[32m251[m[36m:[m# [auth.email.notification.[1;31mpassword[m_changed]
+[35msupabase/config.toml[m[36m:[m[32m253[m[36m:[m# subject = "Your [1;31mpassword[m has been changed"
+[35msupabase/config.toml[m[36m:[m[32m254[m[36m:[m# content_path = "./supabase/templates/[1;31mpassword[m_changed_notification.html"
+[35msupabase/config.toml[m[36m:[m[32m283[m[36m:[m# [auth.hook.custom_[1;31maccess_token[m]
+[35msupabase/config.toml[m[36m:[m[32m385[m[36m:[m# [1;31msecret_key[m = "env(SECRET_VALUE)"
+[35msupabase/config.toml[m[36m:[m[32m404[m[36m:[ms3_[1;31msecret_key[m = "env(S3_[1;31mSECRET_KEY[m)"
