@@ -8,7 +8,7 @@ export default function FloatingWhatsApp({ siteConfig }: { siteConfig: SiteConfi
   const [showTooltip, setShowTooltip] = useState(false);
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 flex items-center gap-3">
+    <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
       {/* Tooltip on Desktop */}
       <div
         className={`hidden md:flex items-center gap-2 bg-[#12131a] text-white text-xs font-bold px-4 py-2.5 rounded-2xl border border-emerald-500/40 shadow-xl transition-all duration-300 pointer-events-none ${
